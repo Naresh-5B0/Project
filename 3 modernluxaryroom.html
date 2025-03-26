@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- for rating -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--for bed-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--for wifi-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--for hotel logo-->
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+ .icon {
+  padding-left: 700px;
+  padding-top:30px;
+  padding-bottom: 10px;
+}
+.d p{
+  padding-left: 550px;
+font-family:'Times New Roman', Times, serif
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.sec1
+{
+    background-color: hsl(170, 15%, 92%);
+}
+
+.slideshow-container {
+  max-width: 1100px;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-top: 30px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 10px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+                      /* section 2 */
+.sec2{
+  background-color: hwb(0 100% 0%);
+}
+/*heading*/
+.he
+{
+    text-align: center;
+}
+/* for review */
+.checked 
+{
+  color: orange;
+}
+/* card */
+.cc {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+.card {
+  box-shadow: 0 4px 8px 0 #f1151533;
+ padding-left: 25px;
+ padding-right: 25px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+  width: 20%;
+  background-color: rgb(218, 224, 226);
+  margin-left: 20px;
+}
+
+.content1 {
+            padding-left: 20%;
+            padding-top: 2%;
+            max-width: 350px;
+            font-size: large;
+          background-color: antiquewhite;
+          max-width: 1000px;
+          width:1100px;
+          height: 280px
+        
+        }
+
+
+
+
+.sec3
+{
+  background-color: hwb(285 85% 7%);
+}
+.fact{
+  border-style: solid;
+  margin-left: 30px;
+  margin-right: 60px;
+  border-radius: 8px;
+}
+.fact.h3
+{
+  padding-left: 80px;
+}
+
+
+.sec3 ul li
+{
+	display: inline-block;
+  padding-left: 80px;
+  padding-right: 70px;
+}
+
+
+/*images gallry*/
+.sec4{
+    background-color: rgb(128, 101, 67);
+}
+
+div.gallery {
+  margin: 20px;
+  border: 1px solid #987c7c;
+  float: left;
+  width: 320px;
+  padding:10px ;
+  padding-left: 10px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+}
+.re{
+    background-color: beige;
+    padding-left: 580px;
+    font-family:  Arial;
+}
+h2{
+    margin-bottom: 20px;
+    margin-left: 90px;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* rewview*/
+.rw{
+    background-color: rgb(183, 225, 232);
+    padding: 20px 40px;
+}
+
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* footer*/
+
+
+
+.footer ul li
+{
+	display: inline-block;
+  padding-left: 180px;
+  padding-right: 70px;
+  width: 20%;
+}
+
+
+
+.car5{
+    background-color:  hsl(0, 6%, 64%);
+    box-shadow: hsl(0, 20%, 55%);
+}
+.credit{
+    font-size: 20PX;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#2c2a2a
+}
+
+</style>
+</head>
+
+<body>
+<section class="sec0">
+  <div class="icon">
+    <a><i style="font-size: 30px;"class="fa-solid fa-hotel">  </i></a>
+  </div>
+  <div class="d">
+    <p><b> FIND  THE  BEST  FOR  GREAT  EXPIERENCE</b></p>
+  </div>
+</section>
+
+<section class="sec1">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/Modern1.jpg" style="width:105%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/Modern2.jpg" style="width:105%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/Modern3.jpg" style="width:105%">
+  
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4/ 4</div>
+    <img src="images/Modern4.jpg" style="width:105%">
+  
+  </div>
+  <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+  <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</section>
+
+
+<section class="sec2">
+    <div class="he">
+        <h1>Modern Luxary Room </h1>
+    </div>
+    <section class="cc">
+    <div class="card">
+      <img src="images/mod luxary.jpg" alt="Avatar" style="width:100%">
+    </div>
+
+    <div class="content1">
+        <p><ul>
+          <h3>REVIEW</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+            <li>Online payment</li>
+            <li>For 5-6 members</li>
+            <li>Free food for 1 day</li>
+            <li> Free facillites</li>
+            
+        </ul></p>
+    </div>
+  </section>
+  </section>
+
+
+  <section class="sec3">
+    <div class="fact">
+      <h3>More Faclities:</h3>
+      <i class="fa fa-wifi" style="font-size:42px;color:rgb(58, 17, 192);padding-right: 150px;padding-left: 130px;padding-top: 40px;"></i>
+      <i class="fa fa-bed" style="font-size:42px;color:rgb(51, 35, 193)"></i>
+      <span style='font-size:35px;padding-left: 180px'>&#128100;</span>
+      <i class="fa fa-medkit" style="font-size:42px;color:rgb(59, 43, 168);padding-left: 190px;padding-right:2px ;"></i>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 24" aria-hidden="true" width="28.5rem" height="2.8rem">
+      <path d="M10.382.312A.7.7 0 0 0 10 .98v2.534C10 4.5 11 5 12 5s2-.5 2-1.486V1a.73.73 0 0 0-.405-.689A4 4 0 0 0 12 .001a4.1 4.1 0 0 0-1.618.311M16 
+      7.302v2.396a.51.51 0 0 1-.57.502 32 32 0 0 0-3.377-.2 29 29 0 0 0-3.476.25A.51.51 0 0 1 8 9.747v-2.37a.85.85 0 0 1 .547-.827A11.8 11.8 0 0 1 11 6.061c.386-.04.744 1.94 1.035 1.94.277 0 .608-1.988.965-1.959a11.2 11.2 0 0 1 2.452.436.84.84 0 0 1 .548.823zM17 16a1 1 0 0 0 1-1v-2.698a.92.92 0 0 0-.822-.824A28 28 0 0 0 12.053 11a28 28 0 0 0-5.232.55.93.93 0 0 0-.821.83V15a1 1 0 0 0 1 1h1a1 1 0 0 1 1 1v6a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-6a1 1 0 0 1 1-1z"></path></svg>
+      <HR>
+        <ul>
+          <li><h4>WI-FI<br>FACILTIY</h4></li>
+          <li><h4>EXTRA<br>BEDS</h4></li>
+          <li><h4>COUPLE<br>REVIEW</h4></li>
+          <li><h4>MEDCINE<br>AVALIBLE</h4></li>
+          <li><h4>24/7<BR>HELP DESK</h4></li>
+        </ul>
+      </div>
+    </div>
+    </section>
+    
+    <section class="sec4">
+        <div >
+          <h2 style="padding-left:570px ;">our gallery</h2>
+        <div class="gallery">
+            <a target="_blank" href="images/pic2.jpg">
+              <img src="images/pic2.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+          </div>
+    
+    
+          <div class="gallery">
+            <a target="_blank" href="images/pic4.jpg">
+              <img src="images/pic4.jpg" alt="Forest" width="600" height="400">
+            </a>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/pic6.jpg">
+              <img src="images/pic6.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/pic1.jpg">
+              <img src="images/pic1.jpg" alt="Mountains" width="600" height="400">
+            </a>
+          </div>
+    
+    
+          <div class="gallery">
+            <a target="_blank" href="images/pic5.jpg">
+              <img src="images/pic5.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/pro.jpg">
+              <img src="images/pro.jpg" alt="Forest" width="600" height="400">
+            </a>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/pic3.jpg">
+              <img src="images/pic3.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/pic7.avif">
+              <img src="images/pic7.avif" alt="Mountains" width="600" height="400">
+            </a>
+          </div>
+        </div>
+       </section>
+        <section class="sec5">
+        <div class ="re">
+         
+          <a href="log.html" ><button type="submit" style="margin-left: 106px;" >Book Now</button></a>
+          <h2 style="padding-right: 30px;">Price: <i class="fa-solid fa-indian-rupee-sign" style="font-size: 22px; "></i>3919</h2>
+                </div>
+       </section>
+
+
+    <section class="rw">
+        <div class ="rww">
+            <h2>CUSTOMER REVIEW:</h2>
+        </div>
+        <div class="container">
+            <img src="images/pic-1.png" alt="Avatar" style="width:90px">
+            <H4>John Doe </H4>
+            <p>we thought that it was gonna be done in a day, but got extended by another day due to the 
+                complexity of the task I was dealing with.</p>
+            <p> I had called my friend who stays close to Besant Roadand he suggested to me that I could 
+                stay in Heven on earth. Well, on that day, </p>
+                <p>I had a good breakfast and set out for work. I was back in the hotel by 12 noon and 
+                    took rest for some time in the AC room</p>
+            <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+          </div>
+          
+          <div class="container">
+            <img src="images/pic-2.png" alt="Avatar" style="width:90px">
+            <H4>Scortlet</H4>
+            <p>
+                Excellent stay.Nice cordial staff.Neat &ckean rooms.Worth for every penny.
+                wifi speed is good.Definitely value for money for solo/business travellers.Nice
+            </p>
+            <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+          </div>
+
+          <div class="container">
+            <img src="images/pic-3.png" alt="Avatar" style="width:90px">
+            <h4>Denver</h4>
+            <p>
+                Very neat clean rooms /bathroom. some non ac rooms don't have window so little bit ventilation issue, otherwise all good..
+                 Mg road and Barrage are only 15 minutes drive from hotel. Nearbuy good eateries are there for South Indian meals..
+            </p>
+            <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+          <span class="fa fa-star "></span>
+           <span class="fa fa-star"></span>
+          </div>
+          
+          <div class="container">
+            <img src="images/pic-4.png" alt="Avatar" style="width:90px">
+            <H4>Rexio</H4>
+            <p>
+                Called them for booking after finding that they have a good review online.
+             But the person in the reception didn't inform me that it was not suitable for ladies
+            </p>
+            <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+         <span class="fa fa-star "></span>
+          <span class="fa fa-star "></span>
+           <span class="fa fa-star"></span>
+          </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container"
+      <div class="box">
+        <h3>follow us:</h3>
+        <ul>
+        <li><a href="#"> <i style="font-size:30px;" class="fab fa-facebook-f"></i> </a></li>
+        <li><a href="#"> <i style="font-size:32px;" class="fab fa-twitter"></i></a></li>
+        <li><a href="#"> <i style="font-size:36px;" class="fab fa-instagram"></i>  </a></li>
+        <li><a href="#"> <i style="font-size:36px;"class="fab fa-linkedin"></i> </a></li>
+      </ul>
+    </div>
+    <div class="car5">
+    <div class="credit"> creadet by <span>HEAVEN ON EARTH </span> | all rights reserved </div>
+  </div>
+</div>
+    </section>
+    
+    
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+
+   </body>
+</html> 

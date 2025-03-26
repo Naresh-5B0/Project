@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Chatbot</title>
+    <link rel="stylesheet" href="css/stylechat.css">
+</head>
+<body>
+    <div class="chatbox">
+        <div class="chatbox-header">
+            <h2>Chatbot</h2>
+        </div>
+        <div class="chatbox-body" id="chatbox-body">
+            <p>Hi there! I'm your friendly assistant. How can I help you today? Please choose one of the following questions:</p>
+            <ul id="question-list">
+                <li onclick="showAnswer('What are the extra features in your hotel?')">What are the extra features in your hotel?</li>
+                <li onclick="showAnswer('booking')">How do I book a room at your hotel?</li>
+                <li onclick="showAnswer('amenities')">What are some unique amenities offered by your hotel?</li>
+                <li onclick="showAnswer('events')">How can I arrange for a special event at your hotel?</li>
+                <li onclick="showAnswer('transportation')">Can I get transportation services from the hotel?</li>
+                <li onclick="showAnswer('dining')">What dining options are available at your hotel?</li>
+                <li onclick="showAnswer('packages')">Do you offer any packages or special deals?</li>
+                <li onclick="showAnswer('safety')">What safety measures are in place at your hotel?</li>
+                <li onclick="showAnswer('cancellation')">What is your hotel's cancellation policy?</li>
+                <li onclick="showAnswer('loyalty')">Do you offer loyalty programs or rewards?</li>
+                <li onclick="showAnswer('attractions')">Are there any nearby attractions or activities?</li>
+            </ul>
+           
+            <div class="user-input">
+                <input type="text" id="user-question" placeholder="Ask me something...">
+                <div id="answer" class="answer">
+                    <!-- Answer will be displayed here -->
+                </div>
+                <button onclick="processUserInput()">Submit</button>
+            </div>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

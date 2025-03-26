@@ -1,0 +1,140 @@
+div.body
+{
+	position:static;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://i.postimg.cc/gj5L2Nn3/Pro.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	min-height: 100px;
+	width: 1490px;
+	height: 730px;
+	
+}
+
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 60px;
+	margin-right: 100px ;
+	
+}
+
+ul li
+{
+	display: inline-block;
+}
+
+.ul li{
+	overflow: hidden;
+  background-color: #000000;
+}
+
+ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 40px;
+	border: 3px solid transparent;
+	transition: 0.5s ease;
+}
+
+ul li a:hover{
+	background-color:white;
+	color: #000000;
+}
+
+ul li.active a
+{
+	background-color:rgb(242, 226, 226);
+		color: #000;
+	
+}
+
+	.logo {
+            
+		width: 100px;
+		height: 100px;
+		top: 15px;
+		left: 10px;
+		padding-left: 100px;
+		padding-top: 10px;
+	}
+
+	.title{
+		position: absolute;
+		top: 46%;
+		right:-10%;
+		transform: translate(-50%,-50%);
+	}
+	
+	.title h1{
+		font-family: Georgia, serif;
+		color: #fff;
+		font-size: 75px;
+		padding-right: 75px;	
+	}
+	
+	
+	.explore{
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		border: 3px solid #3a9b38a4;
+		border-style:ridge;
+		padding: 5px 20px;
+		font-size: 18px;
+		color:white;
+	}
+	.quote1{
+		position: absolute;
+		font: italic  16px/2  "Fira Sans", serif;
+		top: 55%;
+		left: 25%;
+		color: #ffffffe1;
+		transition: 0.6s ease;
+		font-size: 30px;
+
+	}
+	.quote{
+		position: absolute;
+		font: italic  16px/2  "Fira Sans", serif;
+		top: 60%;
+		left: 37%;
+		color: #ffffffe1;
+		transition: 0.6s ease;
+		font-size: 30px;
+
+	}
+	
+	.button{
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	
+	.btn{
+		border: 2px solid white;
+		padding: 5px 20px;
+		color: #ffde05f9;
+		transition: 0.6s ease;
+		font-size: 18px;
+		text-decoration: none;
+	}
+	.btn:hover{
+		background-color: #fff;
+		color: #000;
+	}
+	.bot img{
+	width: 70px;
+	margin-top: 450px;
+	margin-left: 1300px;
+	}
